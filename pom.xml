@@ -2,10 +2,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>klee.contrib</groupId>
+	<groupId>io.github.klee.contrib</groupId>
 	<artifactId>spring.search.tools</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<description>Tools to help spring-data users to handle specifications.</description>
+	<url>https://github.com/klee-contrib/spring-search-tools</url>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -30,9 +31,18 @@
 	<scm>
 		<connection>
 			scm:git:git://github.com/klee-contrib/spring-search-tools.git</connection>
-		<developerConnection>git@github.com:klee-contrib/spring-search-tools.git</developerConnection>
+		<developerConnection>
+			scm:git:ssh://github.com/klee-contrib/spring-search-tools.git</developerConnection>
 		<url>https://github.com/klee-contrib/spring-search-tools.git</url>
+		<tag>HEAD</tag>
 	</scm>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/gideruette/spring-search-tools</url>
+		</repository>
+	</distributionManagement>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
